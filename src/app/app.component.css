@@ -1,0 +1,97 @@
+.input-name {
+    display: inline;
+}
+
+.form-input {
+    margin: 10px;
+    padding: 20px;
+    width: 500px;
+    background-color: rgb(110, 167, 145);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.note-form {
+    margin: 10px;
+    width: 80%;
+    border-color: rgb(12, 68, 42);
+    border-radius: 20px;
+    height: 150px;
+}
+
+.note-name-form {
+    margin: 10px;
+    width: 150px;
+    border-color: rgb(12, 68, 42);
+    border-radius: 20px;
+    border: solid 1px;
+}
+
+.note-name-form:focus
+{
+    border-style: dotted;
+    outline: none;
+}
+.note-form:focus
+{
+    border-style: dotted;
+    outline: none;
+}
+.add-btn
+{
+    position: relative;
+    left: 27%;
+    border-radius: 10px;
+    background: none;
+    color: rgb(135, 221, 178);
+}
+
+.add-btn:hover
+{
+    background-color: rgb(135, 221, 178);
+    color: rgb(208, 255, 233);
+}
+
+.note-title
+{
+    position: relative;
+    text-align: center;
+    left: -190px;
+}
+
+.note-field
+{
+    margin: 10px;
+    padding: 20px;
+    width: 400px;
+    background-color: rgb(65, 119, 98);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.date-text
+{
+    font-size: 12px;
+    text-align: end;
+}
+
+.delete-btn
+{
+    position: relative;
+    left: 70%;
+    border-radius: 10px;
+    background: none;
+    color: rgb(135, 221, 178);
+}
+
+.delete-btn:hover {
+    background-color: rgb(135, 221, 178);
+    color: rgb(208, 255, 233);
+}
+.note-name
+{
+    text-align: center;
+}

@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="container">
+    <form class="form-input">
+        <div class="raw">
+            <div class="col-8">
+                <h4>Добавить заметку</h4>
+            </div>
+        </div>
+        <p class="input-name">Имя заметки:</p>
+        <input class="note-name-form"
+         type="text"
+          [(ngModel)]="add_title"
+          name="note name">
+
+        <div>
+            <textarea class="note-form" 
+            [(ngModel)]="add_text"
+             name="note" 
+             id="note"></textarea>
+        </div>
+
+        <button 
+        (click)="onAddNote()"
+        class="add-btn">+</button>
+    </form>
+
+    <div class="note-title">
+        <h2>Заметки:</h2>
+    </div>
+
+</div>
+
+<div *ngFor="let item of notes ">
+  <div class="note-field">
+    <p class="date-text"><i> Создана {{item.date.toLocaleDateString()}} в {{item.date.toLocaleTimeString()}}</i></p>
+    <p class="note-name"><b>Имя заметки:</b> {{item.name}}</p>
+    <p>{{item.text}}</p>
+    <button (click)="onDeleteNote(item.id)" class="delete-btn">-</button>
+</div>
+
+</div>
+
+</div>
